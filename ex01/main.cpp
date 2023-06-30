@@ -1,21 +1,18 @@
 #include <iostream>
-#include "TemplateClass.hpp"
+#include "Animal.hpp"
+#include "Dog.hpp"
+#include "Cat.hpp"
+#include "WrongCat.hpp"
+#include "WrongAnimal.hpp"
 
-int main() {
+int main()
+{
+	const Animal* j = new Dog();
+	const Animal* i = new Cat();
 
-	Template obj(42); // Create an instance of the Template class with _foo = 42
-	std::cout << obj << std::endl; // Print the object using the overloaded operator<<
+	delete j;//should not create a leak
+	delete i;
 
-/*	Template	instance1;
-	Template	instance2 ( 42);
-	Template	instance3 ( instance1 );
-
-	std::cout << instance1 << std::endl;
-	std::cout << instance2 << std::endl;
-	std::cout << instance3 << std::endl;
-
-	instance3 = instance2;
-	std::cout << instance3 << std::endl;*/
 
 	return 0;
 }
