@@ -43,13 +43,6 @@ AAnimal::~AAnimal() {
 				 << "Destructor called" << std::endl;
 }
 
-void	AAnimal::makeSound() const
-{
-	std::cout 	<< "Base Class " << COLOR_GREEN << "[AAnimal] " << COLOR_DEFAULT
-				 << "makeSound() default member function called: *silence*" << std::endl;
-}
-
-std::string	AAnimal::getType() const
-{
+std::string	AAnimal::getType() const {
 	return (this->_type);
 }
