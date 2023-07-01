@@ -14,11 +14,11 @@ public:
 	Animal();
 	Animal(std::string type);
 	Animal(Animal const & src);
-	Animal & operator=( Animal const & rhs );
+	Animal & operator=( Animal const & rhs);
 	virtual ~Animal();
 
-	virtual void	makeSound(void) const;
-	std::string		getType(void) const;
+	virtual void	makeSound() const;
+	std::string		getType() const;
 
 protected:
 

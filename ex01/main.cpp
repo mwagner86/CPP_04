@@ -2,17 +2,27 @@
 #include "Animal.hpp"
 #include "Dog.hpp"
 #include "Cat.hpp"
-#include "WrongCat.hpp"
-#include "WrongAnimal.hpp"
 
-int main()
-{
-	const Animal* j = new Dog();
-	const Animal* i = new Cat();
+int main() {
+	const int arraySize = 10;
+	Animal* animals[arraySize];
 
-	delete j;//should not create a leak
-	delete i;
+	// Fill the array with Dog and Cat objects
+	for (int i = 0; i < arraySize; i++) {
+		if (i < arraySize / 2) {
+			animals[i] = new Dog();
+		} else {
+			animals[i] = new Cat();
+		}
+	}
 
+	// Delete every Animal object
+	for (int i = 0; i < arraySize; i++) {
+		if (animals[i] != 0) {
+			delete animals[i];
+			animals[i] = 0;
+		}
+	}
 
 	return 0;
 }

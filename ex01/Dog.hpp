@@ -6,6 +6,7 @@
 #define EX01_DOG_HPP
 #include <iostream>
 #include "Animal.hpp"
+#include "Brain.hpp"
 
 class Dog : public Animal {
 
@@ -18,6 +19,11 @@ public:
 	~Dog();
 
 	virtual void	makeSound() const;
+	void setIdea(int index, const std::string& idea);
+	std::string getIdea(int index) const;
+
+private:
+	Brain* _brain;
 
 };
 
