@@ -1,5 +1,16 @@
-#include <iostream>
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   main.cpp                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mwagner <mwagner@student.42wolfsburg.de>   +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/07/01 12:48:37 by mwagner           #+#    #+#             */
+/*   Updated: 2023/07/01 12:49:31 by mwagner          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
+#include <iostream>
 #include "AAnimal.hpp"
 #include "Dog.hpp"
 #include "Cat.hpp"
@@ -18,6 +29,8 @@ int main() {
 			animals[i] = new Cat();
 		}
 	}
+	
+// This will not work anymore since AAnimal is an abstract class and can't be instanciated directly anymore
 /*	const AAnimal* animal = new AAnimal();
 	std::cout << "I am a " << animal->getType() << " I will try to make a sound" << std::endl;
 	animal->makeSound();

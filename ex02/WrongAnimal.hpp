@@ -1,6 +1,14 @@
-//
-// Created by max on 6/30/23.
-//
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   WrongAnimal.hpp                                    :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mwagner <mwagner@student.42wolfsburg.de>   +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/07/01 12:49:57 by mwagner           #+#    #+#             */
+/*   Updated: 2023/07/01 12:50:03 by mwagner          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #ifndef EX01_WRONGANIMAL_HPP
 #define EX01_WRONGANIMAL_HPP
@@ -26,4 +34,4 @@ protected:
 
 };
 
-#endif //EX01_WRONGANIMAL_HPP
+#endif //EX02_WRONGANIMAL_HPP
