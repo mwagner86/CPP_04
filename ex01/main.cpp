@@ -32,6 +32,11 @@ int main() {
 			animals[i] = new Cat();
 		}
 	}
+	const Animal* animal = new Animal();
+	std::cout << "I am a " << animal->getType() << " I will try to make a sound" << std::endl;
+	animal->makeSound();
+	delete animal;
+	std::cout << std::endl;
 
 	// Delete each Animal object
 	for (int i = 0; i < numAnimals; i++) {
