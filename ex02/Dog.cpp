@@ -44,7 +44,7 @@ Dog::~Dog() {
 void	Dog::makeSound() const
 {
 	std::cout 	<< "Derived Class " << COLOR_BLUE << "[Dog] " << COLOR_DEFAULT
-				 << "Meow Meow *purrrrr* Meow Meow " << std::endl;
+				 << "Bark Bark *grrrrr* Bark Bark" << std::endl;
 }
 
 void Dog::setIdea(int index, const std::string& idea) {
