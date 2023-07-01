@@ -12,11 +12,6 @@ Brain::Brain() {
 	}
 }
 
-Brain::Brain(std::string type) {
-	std::cout 	<< "Base Class " << COLOR_CYAN << "[Brain] " << COLOR_DEFAULT
-				 << "Type Constructor called" << std::endl;
-}
-
 Brain::Brain(Brain const & src) {
 	std::cout 	<< "Base Class " << COLOR_CYAN << "[Brain] " << COLOR_DEFAULT
 				 << "Copy Constructor called" << std::endl;
@@ -33,6 +28,12 @@ Brain &	Brain::operator=(Brain const & rhs) {
 	}
 	return *this;
 }
+
+Brain::~Brain() {
+	std::cout 	<< "Base Class " << COLOR_CYAN << "[Brain] " << COLOR_DEFAULT
+				 << "Destructor called" << std::endl;
+}
+
 
 void Brain::setIdea(int index, const std::string& idea) {
 	if (index >= 0 && index < _arraySize) {

@@ -13,7 +13,6 @@ class Brain {
 public:
 
 	Brain();
-	Brain(std::string type);
 	Brain(Brain const & src);
 	Brain & operator=( Brain const & rhs);
 	~Brain();

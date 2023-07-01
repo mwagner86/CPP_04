@@ -32,7 +32,7 @@ WrongAnimal &	WrongAnimal::operator=(WrongAnimal const & rhs) {
 
 WrongAnimal::~WrongAnimal() {
 	std::cout 	<< "Base Class " << COLOR_RED << "[WrongAnimal] " << COLOR_DEFAULT
-				 << "Copy Constructor called" << std::endl;
+				 << "Destructor called" << std::endl;
 }
 
 void	WrongAnimal::makeSound() const {
