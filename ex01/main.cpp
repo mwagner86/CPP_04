@@ -6,7 +6,7 @@
 /*   By: mwagner <mwagner@student.42wolfsburg.de>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/01 12:43:27 by mwagner           #+#    #+#             */
-/*   Updated: 2023/07/01 12:46:41 by mwagner          ###   ########.fr       */
+/*   Updated: 2023/07/04 16:47:57 by mwagner          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -127,6 +127,9 @@ int main() {
 	for (int i = 0; i < 5; i++) {
 		std::cout << "Idea " << i << ": " << dog2.getIdea(i) << std::endl;
 	}
+
+	Animal* animalPtr = new Cat();
+	delete animalPtr; // Without virtual destructor, the Cat destructor won't be called
 
 	return 0;
 }
